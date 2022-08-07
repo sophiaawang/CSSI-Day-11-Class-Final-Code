@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeopardy!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Let's Play Jeopardy</h1>
+    <h3>Your score: <span id="score">[Score]</span></h3>
+    <div class="buttons">
+      <button id="random">Random Question</button>
+      <button id="hard">Hard Question</button>
+      
+            <button id="categoryChoice">Choose Category</button>
+    </div>
+    <div id="points" class="questionCard">
+      <div class="questionHeader">
+        for <span id="points">[X00]</span> points:
+      </div>
+    </div>
+    <div id="q" class="questionCard hidden">
+      <div id="question"> [QUESTION HERE]</div>
+      <div>
+        <input type="text" id="userAnswer" />
+        <input type="submit" value="submit" id="submit" />
+      </div>
+    </div>
+    <section>
+      <div id="blank" class="questionCard hidden">
+        <div class="blank"> </div>
+      </div>
+    </section>
+    <section id= "category" class = "hidden">
+      Enter category value
+     <div>
+        <input type="text" id="categoryChoice" />
+        <input type="submit" value="submit" id="submitCategory" />
+      </div>
+</section>
+  </div>
+  <script src="./script.js" defer></script>
+</body>
+
+</html>
